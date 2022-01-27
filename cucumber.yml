@@ -1,0 +1,21 @@
+## Scripts para execução local
+default:  -p pretty -p html_report -p json_report -p env_qa -p local
+env_stage:  -p pretty -p html_report -p json_report -p stage
+qa:   -p pretty -p html_report -p json_report -p env_qa
+# env_prod: -p pretty -p html_report -p json_report -p prod
+responsivo: -p pretty -p mobile
+
+stage: ENVIRONMENT_TYPE=stage
+env_qa: ENVIRONMENT_TYPE=qa
+# prod: ENVIRONMENT_TYPE=prod
+
+pretty: --format pretty
+ci:  --format progress
+dot: --format progress
+html_report: --format html --out=results/report.html
+json_report: --format json --out=results/report.json
+
+local:             BROWSER=local
+linux:             BROWSER=linux
+# remote:            BROWSER=remote_chrome
+mobile:            BROWSER=mobile
