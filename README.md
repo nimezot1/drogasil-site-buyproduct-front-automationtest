@@ -2,12 +2,6 @@
 # Projeto de Automação Tiago Ferreira
 > E-commerce Desktop
 
-## Índices
-- [Guia de instalação](#installation)
-- [Equipe](#team)
-- [FAQ](#faq)
-- [Resources](#resources)
-
 ## Guia de instalação
 - Todo o código do projeto se encontra no repositório
 
